@@ -4,3 +4,9 @@
 [submodule "src/Bundle/Ariadne/AriadneBundle"]
 	path = src/Bundle/Ariadne/AriadneBundle
 	url = git://github.com/dstendardi/AriadneBundle.git
+[submodule "src/Bundle/Everzet/BehatBundle"]
+	path = src/Bundle/Everzet/BehatBundle
+	url = git://github.com/everzet/EverzetBehatBundle.git
+[submodule "src/vendor/behat"]
+	path = src/vendor/behat
+	url = git://github.com/everzet/Behat
