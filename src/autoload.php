@@ -20,6 +20,8 @@ $loader->registerNamespaces(array(
     'Doctrine'                       => $vendorDir.'/doctrine/lib',
     'Ariadne'                        => $vendorDir.'/ariadne/lib',
     'Ariadne\\Tests'                 => $vendorDir.'/ariadne/tests',
+    'Everzet\\Behat'                 => $vendorDir . '/behat/src',
+	'Everzet\\Gherkin'               => $vendorDir . '/behat/src',
     'Zend'                           => $vendorDir.'/zend/library',
 ));
 $loader->registerPrefixes(array(

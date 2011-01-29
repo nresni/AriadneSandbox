@@ -17,6 +17,8 @@ twig.config:
 
 ariadne.config: ~
 
+behat.config: ~
+
 ## Doctrine Configuration
 #doctrine.dbal:
 #    dbname:   xxxxxxxx
