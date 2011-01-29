@@ -1,0 +1,6 @@
+[submodule "src/vendor/ariadne"]
+	path = src/vendor/ariadne
+	url = git://github.com/dstendardi/Ariadne
+[submodule "src/Bundle/Ariadne/AriadneBundle"]
+	path = src/Bundle/Ariadne/AriadneBundle
+	url = git://github.com/dstendardi/AriadneBundle.git
