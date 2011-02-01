@@ -1,41 +1,32 @@
 README
 ======
 
-What is Symfony?
+How to setup ?
 ----------------
 
-Symfony is a PHP 5.3 full-stack web framework. It is written with speed and
-flexibility in mind. It allows developers to built better and easy to maintain
-websites with PHP.
+1. checkout the sources
 
-Symfony can be used to develop all kind of websites, from your personal blog
-to high traffic ones like Dailymotion or Yahoo! Answers.
+    git clone git@github.com:dstendardi/AriadneSandbox.git ariadne-sandbox
 
-High Performance
-----------------
+2. get submodule sources
 
-Built with performance in mind, Symfony 2 is one of the fastest PHP
-frameworks. It is up to 3 times faster than symfony 1.4 or Zend Framework 1.10
-and consumes half the memory.
+   git submodule init
+   git submodule update
 
-Requirements
-------------
+3. get Elastic search and run it
 
-Symfony is only supported on PHP 5.3.2 and up. To check the compatibility of
-your environment with Symfony, you can run the `web/check.php` script, bundled
-with this sandbox.
+   download at :  http://www.elasticsearch.com/download/master/ 
 
-Documentation
--------------
+ unzip & run 
+   
+   chmod +x /path/to/unzipped/bin/elasticsearch 
+   /path/to/unzipped/bin/elasticsearch -f
+   
+4. Install behat
 
-Symfony 2.0 is still in the early stages of development, but the "[Quick Tour][1]"
-tutorial can get you started fast.
+   pear channel-discover pear.everzet.com
+   pear install everzet/behat-beta
 
-The "Quick Tour" tutorial barely scratches the surface of Symfony 2.0 but it
-gives you a first feeling of the framework. If, like us, you think that
-Symfony 2.0 can help speed up your development and take the quality of your
-work to the next level, visit the official [Symfony 2 website][2] to learn
-about it.
+5. Run the tests
 
-[1]: http://docs.symfony-reloaded.org/
-[2]: http://symfony-reloaded.org/
+   php app/console behat:test:bundle "Bundle\Ariadne\AriadneBundle"
